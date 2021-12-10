@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Righteous", cursive;
+}
+
+.Header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 219, 0, 0.2);
+}
+
+.Header-Logo {
+  transition: 0.3s;
+  width: 200px;
+}
+
+.Header-Logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.Header-Menu {
+  display: flex;
+}
+
+.Header-Menu-Item {
+  transition: 0.3s;
+  text-align: center;
+  margin: 0;
+  width: 100px;
+  line-height: 70px;
+}
+
+.Header-Menu-Item:hover {
+  background-color: rgba(255, 219, 0, 0.5);
+  color: white;
+}
