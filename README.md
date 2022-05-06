@@ -4,3 +4,7 @@
   - ひよこWebサイト：https://hiyokodev.com
   - STUDIOエディター：https://app.studio.design/projects/Nxqg5LMDW1/editor/page
 - 本環境では~~Vue.js~~Reactフレームワーク上に実装しますが、本リポジトリでは事前知識が必要となる要素をできるだけ省くため、HTML/CSS/JSのみでコーディングをお願いします。
+
+## GitHub Pages
+https://hiyokodev.github.io/studio_cording/
+`deploy_GitHubPages`ブランチにPushするとGitHub ActionsによってGitHub Pagesに自動デプロイされます。
