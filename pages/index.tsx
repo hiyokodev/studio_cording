@@ -19,13 +19,19 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+
+  // 環境によってパスを分ける
+  const dir = process.env.NODE_ENV == "production" ? "/studio_cording" : ""
+  console.log("process.env.NODE_ENV: ", process.env.NODE_ENV)
+  console.log("dir:", dir)
+
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={styles.Top}>
-        <img src="/images/top.png" className={styles.Top__Image} />
+        <img src={dir + "/images/top.png"} className={styles.Top__Image} />
       </section>
 
       <section className={styles.About}>
