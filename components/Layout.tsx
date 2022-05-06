@@ -5,6 +5,9 @@ import styles from "./layout.module.css";
 export const siteTitle = "UALひよこクラブ 開発部";
 
 function Layout({ children }) {
+  // 環境によってパスを分ける
+  const dir = process.env.DIR;
+
   return (
     <div>
       <Head>
@@ -12,7 +15,7 @@ function Layout({ children }) {
       </Head>
       <header className={styles.Header}>
         <Link href="/">
-          <img src="/images/logo.png" className={styles.Header__Logo} />
+          <img src={dir + "/images/logo.png"} className={styles.Header__Logo} />
         </Link>
         <div className={styles.Header__Menu}>
           <Link href="members">
