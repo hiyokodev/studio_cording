@@ -45,7 +45,7 @@ export default function Home({ allPostsData }) {
               </p>
             </div>
             <img
-              src="/images/hiyoko.webp"
+              src="studio_cording/images/hiyoko.webp"
               className={styles.About__Content__Image}
             />
           </div>
