@@ -62,7 +62,7 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/studio_cording/public/images/tornado-1.svg"
+                  src="/studio_cording/images/tornado-1.svg"
                   className={styles.Solution__Icon}
                 />
                 <p>勉強のモチベーションが続かない</p>
