@@ -1,0 +1,266 @@
+.Top {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.Top__Image {
+  width: 100%;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: rgba(255, 219, 0, 0.2);
+}
+
+.About__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.About__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.About__Contents {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.About__Content__Text {
+  width: 70%;
+}
+
+.About__Content__Image {
+  width: 30%;
+}
+
+.About__Button {
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.1s;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80px;
+  width: 200px;
+  padding: 12px 24px;
+  background-color: #ffdb00;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.About__Button:hover {
+  color: White;
+}
+
+.About__Button:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: White;
+}
+
+.Solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Solution__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Solution__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Solution__Contents {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Solution__Contents__Card {
+  width: 46%;
+  margin: 2%;
+  min-width: 450px;
+}
+
+.Solution__Contents__Card__Problem {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.Solution__Contents__Card__Answer {
+  display: flex;
+}
+
+.Solution__Icon {
+  width: 50px;
+  height: 50px;
+}
+
+.Study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: rgba(255, 219, 0, 0.2);
+}
+
+.Study__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Study__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Study__Contents {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Study__Contents__Top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Study__Contents__Card {
+  width: 45%;
+  text-align: center;
+  margin: 0 10px 50px 10px;
+}
+
+.Study__Contents__Card__Image {
+  height: 180px;
+}
+
+.Study__Contents__Card__Title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.Study__Contents__Card__Description {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.Format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Format__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Format__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Format__Contents {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Format__Contents__Top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Format__Contents__Card {
+  width: 31%;
+  text-align: center;
+  margin: 0 10px 50px 10px;
+}
+
+.Format__Contents__Card__Image {
+  max-width: 200px;
+}
+
+.Format__Contents__Card__Title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.Format__Contents__Card__Description {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.Format__Contents__Bottom {
+  display: flex;
+}
+
+.Format__Button {
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.1s;
+  border-radius: 80px;
+  width: 200px;
+  padding: 12px 24px;
+  background-color: #ffdb00;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Format__Button:not(:first-child) {
+  margin-left: 50px;
+}
+
+.Format__Button:hover {
+  color: White;
+}
+
+.Format__Button:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: White;
+}

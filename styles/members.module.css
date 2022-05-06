@@ -1,0 +1,81 @@
+/* Members の画像一覧 */
+
+.Members {
+  background-color: rgba(255, 219, 0, 0.2);
+  padding-bottom: 20%;
+}
+
+.Members-Title {
+  padding-top: 110px;
+  font-size: 80px;
+  margin-left: 5%;
+}
+
+.Members-Images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.Member-Image img {
+  width: 100%;
+  border-radius: 10px;
+  /* opacity : 0;
+  transition : all 1s; */
+}
+
+
+/* .Member-Image img.active{
+  opacity : 1;
+} */
+
+.Member-Image img:hover {
+  opacity: 0.4;
+}
+
+
+/* 個人紹介 */
+
+.Profiles {
+  background-color: white;
+  padding-top: 5%;
+}
+
+.Profile {
+  padding: 5% 15%;
+  display: flex;
+}
+
+.Profile__Image {
+  width: 40%;
+}
+
+.Profile__Sentence {
+  width: 60%;
+}
+
+.Profile__Image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Name {
+  font-size: 40px;
+  padding: 5% 10%;
+}
+
+.Name img {
+  margin-left: 30px;
+  padding-bottom: 10px;
+  width: 80px;
+}
+
+.Sentence {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-left: 10%;
+}
