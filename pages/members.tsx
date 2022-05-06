@@ -15,6 +15,9 @@ export async function getStaticProps() {
 }
 
 export default function Members({ allMembersData }) {
+  // 環境によってパスを分ける
+  const dir = process.env.DIR;
+
   return (
     <Layout>
       <Head>
@@ -24,7 +27,7 @@ export default function Members({ allMembersData }) {
         {allMembersData.map(({ id, name, year, image, description }) => (
           <div key={id} className={styles.Profile}>
             <div className={styles.Profile__Image}>
-              <img src={image} />
+              <img src={dir + image} />
             </div>
             <div className={styles.Profile__Sentence}>
               <p className={styles.Name} id="1">
