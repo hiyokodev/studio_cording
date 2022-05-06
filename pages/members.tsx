@@ -21,8 +21,8 @@ export default function Members({ allMembersData }) {
         <title>Members</title>
       </Head>
       <section className={styles.Profiles}>
-        {allMembersData.map(({ name, year, image, description }) => (
-          <div className={styles.Profile}>
+        {allMembersData.map(({ id, name, year, image, description }) => (
+          <div key={id} className={styles.Profile}>
             <div className={styles.Profile__Image}>
               <img src={image} />
             </div>
