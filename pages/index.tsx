@@ -45,7 +45,7 @@ export default function Home({ allPostsData }) {
               </p>
             </div>
             <img
-              src="studio_cording/images/hiyoko.webp"
+              src="/studio_cording/images/hiyoko.webp"
               className={styles.About__Content__Image}
             />
           </div>
@@ -62,7 +62,7 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/images/tornado-1.svg"
+                  src="/studio_cording/public/images/tornado-1.svg"
                   className={styles.Solution__Icon}
                 />
                 <p>勉強のモチベーションが続かない</p>
