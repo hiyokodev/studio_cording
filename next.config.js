@@ -10,8 +10,8 @@ const nextConfig = {
 };
 module.exports = nextConfig;
 
-module.exports = {
-  env: {
-    DIR: process.env.NODE_ENV == "production" ? "/studio_cording" : "",
-  },
-};
+// module.exports = {
+//   env: {
+//     DIR: process.env.NODE_ENV == "production" ? "/studio_cording" : "",
+//   },
+// };
