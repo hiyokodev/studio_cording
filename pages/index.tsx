@@ -19,13 +19,16 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  // 環境によってパスを分ける
+  const dir = process.env.DIR;
+
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={styles.Top}>
-        <img src="/images/top.png" className={styles.Top__Image} />
+        <img src={dir + "/images/top.png"} className={styles.Top__Image} />
       </section>
 
       <section className={styles.About}>
@@ -45,7 +48,7 @@ export default function Home({ allPostsData }) {
               </p>
             </div>
             <img
-              src="/images/hiyoko.webp"
+              src={dir + "/images/hiyoko.webp"}
               className={styles.About__Content__Image}
             />
           </div>
@@ -62,14 +65,14 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/images/tornado-1.svg"
+                  src={dir + "/images/tornado-1.svg"}
                   className={styles.Solution__Icon}
                 />
                 <p>勉強のモチベーションが続かない</p>
               </div>
               <div className={styles.Solution__Contents__Card__Answer}>
                 <img
-                  src="/images/icon-idea03.png"
+                  src={dir + "/images/icon-idea03.png"}
                   className={styles.Solution__Icon}
                 />
                 <p>
@@ -82,14 +85,14 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/images/tornado-1.svg"
+                  src={dir + "/images/tornado-1.svg"}
                   className={styles.Solution__Icon}
                 />
                 <p>わからないところで挫折してしまう</p>
               </div>
               <div className={styles.Solution__Contents__Card__Answer}>
                 <img
-                  src="/images/icon-idea03.png"
+                  src={dir + "/images/icon-idea03.png"}
                   className={styles.Solution__Icon}
                 />
                 <p>
@@ -102,14 +105,14 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/images/tornado-1.svg"
+                  src={dir + "/images/tornado-1.svg"}
                   className={styles.Solution__Icon}
                 />
                 <p>コミュニティが広がらない</p>
               </div>
               <div className={styles.Solution__Contents__Card__Answer}>
                 <img
-                  src="/images/icon-idea03.png"
+                  src={dir + "/images/icon-idea03.png"}
                   className={styles.Solution__Icon}
                 />
                 <p>
@@ -123,14 +126,14 @@ export default function Home({ allPostsData }) {
             <div className={styles.Solution__Contents__Card}>
               <div className={styles.Solution__Contents__Card__Problem}>
                 <img
-                  src="/images/tornado-1.svg"
+                  src={dir + "/images/tornado-1.svg"}
                   className={styles.Solution__Icon}
                 />
                 <p>勉強の進め方がわからない</p>
               </div>
               <div className={styles.Solution__Contents__Card__Answer}>
                 <img
-                  src="/images/icon-idea03.png"
+                  src={dir + "/images/icon-idea03.png"}
                   className={styles.Solution__Icon}
                 />
                 <p>
@@ -151,7 +154,7 @@ export default function Home({ allPostsData }) {
             <div className={styles.Study__Contents__Top}>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_1.webp"
+                  src={dir + "/images/contents_1.webp"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>
@@ -164,7 +167,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_2.webp"
+                  src={dir + "/images/contents_2.webp"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>
@@ -177,7 +180,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_3.webp"
+                  src={dir + "/images/contents_3.webp"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>
@@ -190,7 +193,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_4.png"
+                  src={dir + "/images/contents_4.png"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>
@@ -203,7 +206,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_5.webp"
+                  src={dir + "/images/contents_5.webp"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>AWS</p>
@@ -214,7 +217,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Study__Contents__Card}>
                 <img
-                  src="/images/contents_6.webp"
+                  src={dir + "/images/contents_6.webp"}
                   className={styles.Study__Contents__Card__Image}
                 />
                 <p className={styles.Study__Contents__Card__Title}>資格学習</p>
@@ -245,7 +248,7 @@ export default function Home({ allPostsData }) {
             <div className={styles.Format__Contents__Top}>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>
@@ -258,7 +261,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>
@@ -271,7 +274,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>
@@ -284,7 +287,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>
@@ -297,7 +300,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>勉強会</p>
@@ -308,7 +311,7 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.Format__Contents__Card}>
                 <img
-                  src="/images/format_1.webp"
+                  src={dir + "/images/format_1.webp"}
                   className={styles.Format__Contents__Card__Image}
                 />
                 <p className={styles.Format__Contents__Card__Title}>交流会</p>
