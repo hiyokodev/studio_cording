@@ -1,116 +1,266 @@
-.container {
-  padding: 0 2rem;
+.Top {
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.Top__Image {
+  width: 100%;
+}
+
+.About {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: rgba(255, 219, 0, 0.2);
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.About__Inner {
+  width: 100%;
+  max-width: 1080px;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.About__Title {
+  font-size: 48px;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.About__Contents {
+  margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.About__Content__Text {
+  width: 70%;
+}
+
+.About__Content__Image {
+  width: 30%;
+}
+
+.About__Button {
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.1s;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80px;
+  width: 200px;
+  padding: 12px 24px;
+  background-color: #ffdb00;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.About__Button:hover {
+  color: White;
+}
+
+.About__Button:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: White;
+}
+
+.Solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Solution__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Solution__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Solution__Contents {
+  margin-top: 50px;
+  display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.Solution__Contents__Card {
+  width: 46%;
+  margin: 2%;
+  min-width: 450px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.Solution__Contents__Card__Problem {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.Solution__Contents__Card__Answer {
+  display: flex;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.Solution__Icon {
+  width: 50px;
+  height: 50px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.Study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: rgba(255, 219, 0, 0.2);
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.Study__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Study__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Study__Contents {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Study__Contents__Top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Study__Contents__Card {
+  width: 45%;
+  text-align: center;
+  margin: 0 10px 50px 10px;
+}
+
+.Study__Contents__Card__Image {
+  height: 180px;
+}
+
+.Study__Contents__Card__Title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.Study__Contents__Card__Description {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.Format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Format__Inner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.Format__Title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.Format__Contents {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Format__Contents__Top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Format__Contents__Card {
+  width: 31%;
+  text-align: center;
+  margin: 0 10px 50px 10px;
+}
+
+.Format__Contents__Card__Image {
+  max-width: 200px;
+}
+
+.Format__Contents__Card__Title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.Format__Contents__Card__Description {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.Format__Contents__Bottom {
+  display: flex;
+}
+
+.Format__Button {
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.1s;
+  border-radius: 80px;
+  width: 200px;
+  padding: 12px 24px;
+  background-color: #ffdb00;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Format__Button:not(:first-child) {
+  margin-left: 50px;
+}
+
+.Format__Button:hover {
+  color: White;
+}
+
+.Format__Button:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: White;
 }
