@@ -33,7 +33,9 @@ export default function Home({ allPostsData }) {
 
       <section className={styles.About}>
         <div className={styles.About__Inner}>
-          <h2 className={styles.About__Title}>ひよこ開発とは</h2>
+          <h2 className={styles.About__Title}>
+            ひよこ開発とは{process.env.URL_PREFIX}
+          </h2>
           <div className={styles.About__Contents}>
             <div className={styles.About__Contents__Text}>
               <p>
