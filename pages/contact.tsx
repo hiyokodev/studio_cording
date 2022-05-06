@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Contact</title>
       </Head>
       Contact
     </Layout>
