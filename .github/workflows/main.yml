@@ -2,9 +2,9 @@ name: Deploy Next.js app
 
 on:
   push:
-    branches: [ main ]
+    branches: [ deploy_GitHubPages ]
   pull_request:
-    branches: [ main ]
+    branches: [ deploy_GitHubPages ]
 
 jobs:
   build:
