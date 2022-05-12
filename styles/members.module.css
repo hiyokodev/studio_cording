@@ -45,37 +45,55 @@
 }
 
 .Profile {
-  padding: 5% 15%;
   display: flex;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding: 5% 15%; */
 }
 
-.Profile__Image {
-  width: 40%;
+.Profile__Left {
+  width: 30%;
 }
 
-.Profile__Sentence {
-  width: 60%;
+.Profile__Right {
+  width: 70%;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.Profile__Image img {
+.Profile__Left img {
   width: 100%;
   border-radius: 10px;
 }
 
-.Name {
-  font-size: 40px;
-  padding: 5% 10%;
+.Profile__Right__Name {
+  margin: 0;
+  font-size: 45px;
 }
 
-.Name img {
+.Profile__Right__Name img {
+  /* 用途不明 */
   margin-left: 30px;
   padding-bottom: 10px;
   width: 80px;
 }
 
-.Sentence {
-  text-align: justify;
+.Profile__Right__Name__Year {
+  margin-left: 30px;
+  padding: 3px 10px;
+  color: white;
   font-size: 20px;
+  background-color: blue;
+}
+
+.Profile__Right__Sentence {
+  color: gray;
+  text-align: justify;
+  font-size: 18px;
   line-height: 1.5;
-  padding-left: 10%;
 }

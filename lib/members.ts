@@ -10,20 +10,34 @@ const MEMBERS_DIRECTORY = path.join(
 // .mdファイルからMemberデータを取り出す
 export function getMembersData() {
   const fileNames: string[] = fs.readdirSync(MEMBERS_DIRECTORY);
-  const allMembersData = fileNames.map((fileName) => {
+  const allMembersData: MembersData[] = fileNames.map((fileName) => {
     // 拡張子を外してファイル名をIDとして取得
     const id: string = fileName.replace(/\.md$/, "");
 
     // .mdファイルを文字列として読み取る
     const fullPath: string = path.join(MEMBERS_DIRECTORY, fileName);
     const fileContents: string = fs.readFileSync(fullPath, "utf8");
-    const matterResult = matter(fileContents);
+    const matterResult = { ...matter(fileContents).data };
 
-    // IDとデータを返す
-    return {
+    // TODO: ...matterResultとして各値を返却したいが、そうすると型指定関連のエラーが出てしまう
+    const name: string = matterResult.name;
+    const name_jpn: string = matterResult.name_jpn;
+    const year: number = matterResult.year;
+    const joinNumber: number = matterResult.joinNumber;
+    const image: string = matterResult.image;
+    const description: string = matterResult.description;
+
+    const ret: MembersData = {
       id,
-      ...matterResult.data, // .mdファイルのメタデータ
+      name,
+      name_jpn,
+      year,
+      joinNumber,
+      image,
+      description,
     };
+
+    return ret;
   });
 
   return allMembersData;
