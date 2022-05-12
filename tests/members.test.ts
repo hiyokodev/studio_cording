@@ -14,5 +14,3 @@ describe("Test for getMembersData()", () => {
     expect(getMembersData()).toEqual(expectData);
   });
 });
-
-// Mockで.mdファイルを準備
