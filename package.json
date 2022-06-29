@@ -8,9 +8,16 @@
     "export": "next export",
     "start": "next start",
     "test": "jest",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contentful-typescript-codegen": "contentful-typescript-codegen --output @types/generated/contentful.d.ts"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@contentful/rich-text-types": "^15.12.1",
+    "contentful": "^9.1.32",
+    "contentful-management": "^10.6.3",
+    "contentful-typescript-codegen": "^3.2.3",
+    "dotenv": "^16.0.1",
     "gray-matter": "^4.0.3",
     "next": "12.1.6",
     "react": "18.1.0",

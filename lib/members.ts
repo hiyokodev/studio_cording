@@ -2,6 +2,8 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 
+// TODO: 不要ファイルの削除
+
 const MEMBERS_DIRECTORY = path.join(
   process.cwd(),
   process.env.MEMBERS_PROFILE_DIR
